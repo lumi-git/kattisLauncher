@@ -1,0 +1,2 @@
+# kattisLauncher
+launcher for kattis
