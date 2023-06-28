@@ -15,3 +15,7 @@ exerciseFile = "Ex.py"
 #used in case of input mode file
 inputFile = "input"
 outputFile = "output"
+
+#your shortcut to python.
+
+PythonShortcut = "python3"
