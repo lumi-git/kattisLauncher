@@ -1,4 +1,4 @@
-import os,subprocess,datetime,FileSolver
+import os,subprocess,datetime,FileSolver,KattisApiRequester
 from config import *
 
 def logConfig() :
@@ -24,7 +24,7 @@ logConfig()
 ExercisePath = "Exercises/"+exerciseFolder
 ExerciseFile = ExercisePath+"/"+exerciseFolder+".py"
 if inputMode == inputModes.KATTISAPI:
-    os.system(PythonShortcut+" KattisApiRequester.py "+ExerciseName+" " + ExerciseFile)
+    KattisApiRequester.solve()
 
 elif inputMode == inputModes.FILE:
     FileSolver.solve()
