@@ -1,4 +1,4 @@
-import os, subprocess, datetime, FileSolver, KattisApiRequester
+import os, datetime, FileSolver, KattisApiRequester
 from config import *
 
 

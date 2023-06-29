@@ -1,4 +1,4 @@
-import os, time, subprocess, sys
+import os, time, subprocess
 from config import *
 
 
