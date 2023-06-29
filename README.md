@@ -6,6 +6,16 @@ Complete simple launcher for kattis exercises
 
 Basic setup for the launcher
 
+- be sure to have all modules by running : 
+    > python3 -m pip install -r requirements.txt
+    
+    or
+
+    > pip install -r requirements.txt
+
+    based on your python config
+    
+
 - Place your exercise in the Exercises folder
 
 - configure the exercise you want to run in config.py as explained in the configuration section

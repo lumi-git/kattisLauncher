@@ -1,6 +1,8 @@
 import subprocess,sys,zipfile,io,time,requests,config
 from pathlib import Path
 
+
+
 def solve():
     samples_url = f"https://open.kattis.com/problems/{config.ExerciseName}/file/statement/samples.zip"
     r = requests.get(samples_url)
