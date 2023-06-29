@@ -4,14 +4,10 @@ from inputModes import inputModes
 ExerciseName = "twostones"
 
 # modify this var with the inputModes enum to set the mode of the lqncher
-inputMode = inputModes.KATTISAPI
+inputMode = inputModes.FILE
 
 # file where you coded the solution
 exerciseFolder = "Ex1"
-
-# used in case of input mode file
-inputFile = "input"
-outputFile = "output"
 
 # your shortcut to python.
 
