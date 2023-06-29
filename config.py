@@ -9,7 +9,7 @@ inputMode = inputModes.FILE
 
 
 #file where you coded the solution
-exerciseFile = "Ex.py"
+exerciseFile = "Ex1.py"
 
 
 #used in case of input mode file

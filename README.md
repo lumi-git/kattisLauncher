@@ -2,6 +2,18 @@
 
 Complete simple launcher for kattis exercises
 
+## setup
+
+Basic setup for the launcher
+
+- Place your exercise in the Exercises folder
+
+- configure the exercise you want to run in config.py as explained in the configuration section
+
+- the output will be print in the console
+
+- a log file will be created in the Logs folder to keep track of the exercises you have done
+
 ## Configuration
 
 You will be able to modify these values in config.py file
