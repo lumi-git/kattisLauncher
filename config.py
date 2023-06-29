@@ -5,7 +5,7 @@ ExerciseName = "twostones"
 
 
 #modify this var with the inputModes enum to set the mode of the lqncher
-inputMode = inputModes.KATTISAPI
+inputMode = inputModes.FILE
 
 
 #file where you coded the solution
