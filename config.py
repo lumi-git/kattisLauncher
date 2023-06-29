@@ -5,11 +5,11 @@ ExerciseName = "twostones"
 
 
 #modify this var with the inputModes enum to set the mode of the lqncher
-inputMode = inputModes.FILE
+inputMode = inputModes.KATTISAPI
 
 
 #file where you coded the solution
-exerciseFile = "Ex1.py"
+exerciseFolder = "Ex1"
 
 
 #used in case of input mode file

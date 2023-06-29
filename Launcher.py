@@ -1,10 +1,10 @@
-import os,subprocess,datetime
+import os,subprocess,datetime,FileSolver
 from config import *
 
 def logConfig() :
-    cfgFileName = "Logs/"+exerciseFile.replace(".py","")+" - "+ExerciseName+".log"
+    cfgFileName = "Logs/"+exerciseFolder +"-"+ExerciseName+".log"
     current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    sep = f"------------------- {ExerciseName} - { current_date }------------------\n"
+    sep = f"------------------- {ExerciseName} - { current_date } ------------------\n"
     cfg = open("config.py", "r").read()
 
     if not os.path.exists(cfgFileName):
@@ -21,24 +21,13 @@ def logConfig() :
 print("Launching " + ExerciseName + " in " + inputMode.name+" mode.")
 logConfig()
 
-ExercisePath = "Exercises/"+exerciseFile
-
+ExercisePath = "Exercises/"+exerciseFolder
+ExerciseFile = ExercisePath+"/"+exerciseFolder+".py"
 if inputMode == inputModes.KATTISAPI:
-    os.system(PythonShortcut+" KattisApiRequester.py "+ExerciseName+" " + ExercisePath)
+    os.system(PythonShortcut+" KattisApiRequester.py "+ExerciseName+" " + ExerciseFile)
 
 elif inputMode == inputModes.FILE:
-    with open(inputFile, 'r') as file:
-        input_data = file.read().encode()  # We need to encode the string to bytes
-
-    p = subprocess.run([PythonShortcut, ExercisePath], input=input_data, capture_output=True)
-    print("---")
-    print("Your output :")
-
-    print(p.stdout.decode())
-    print("---")
-    print("Expected :")
-
-    print(open(outputFile).read())
+    FileSolver.solve()
 
 elif inputMode == inputModes.CONSOLE:
-    os.system(PythonShortcut + " " + ExercisePath)
+    os.system(PythonShortcut + " " + ExerciseFile)
