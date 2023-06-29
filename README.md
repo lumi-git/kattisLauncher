@@ -14,7 +14,7 @@ Basic setup for the launcher
     > pip install -r requirements.txt
 
     based on your python config
-    
+
 
 - Place your exercise in the Exercises folder
 
@@ -34,15 +34,10 @@ You will be able to modify these values in config.py file
 - inputMode
     - > The mode of input you want to use based on inputModes enum
 
-- exerciseFile
-    - > The name of the file you coded in
+- exerciseFolder
+    - > The name of the folder where your exercise is located
+    (The folder must be in the Exercises folder, and the name must be the same as the python file)
       
-- inputFile
-    - > The path of the input file you want to use
-
-- outputFile
-    - > The path of the output file you want to use
-
 - PythonShortcut
     - > The shortcut you want to use to run the python file
 

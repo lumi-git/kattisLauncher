@@ -2,7 +2,7 @@ import sys
 
 lines = sys.stdin.read().splitlines()
 
-if not int(lines[0]) %2 :
+if not int(lines[0]) % 2:
     print("Bob")
-else :
+else:
     print("Alice")

@@ -1,6 +1,5 @@
-import subprocess,sys,zipfile,io,time,requests,config
+import subprocess, sys, zipfile, io, time, requests, config
 from pathlib import Path
-
 
 
 def solve():
