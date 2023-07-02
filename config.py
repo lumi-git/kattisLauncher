@@ -12,3 +12,4 @@ exerciseFolder = "Ex1"
 # your shortcut to python.
 
 PythonShortcut = "python3"
+
